@@ -39,6 +39,7 @@ public class DatabaseAdapter {
     public void disconnect( ){
         try {
             if ( null != this.conn ) this.conn.close();
+            if ( null != this.stmnt ) this.stmnt.close();
             setConnectionState(false);
         } catch (SQLException e){
             e.printStackTrace();
