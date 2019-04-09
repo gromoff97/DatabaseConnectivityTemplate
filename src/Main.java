@@ -19,6 +19,8 @@ public class Main {
         myDb.connect();
         showConnState(myDb);
 
+        myDb.createTables();
+
         myDb.disconnect();
         showConnState(myDb);
     }
