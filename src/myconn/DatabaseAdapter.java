@@ -5,6 +5,7 @@ import java.sql.*;
 public class DatabaseAdapter {
 
     private Connection conn;
+    private Statement stmnt;
 
     private String jdbUrl;
     private String username;
