@@ -1,5 +1,5 @@
-import myconn.DatabaseAdapter;
-import myconn.DotaPickDBManager;
+import adapters.DatabaseAdapter;
+import dbmanagers.DotaPickDBManager;
 
 public class Main {
 

@@ -1,4 +1,6 @@
-package myconn;
+package dbmanagers;
+
+import adapters.DatabaseAdapter;
 
 import java.sql.SQLException;
 

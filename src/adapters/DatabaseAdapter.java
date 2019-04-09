@@ -1,4 +1,4 @@
-package myconn;
+package adapters;
 
 import java.sql.*;
 
