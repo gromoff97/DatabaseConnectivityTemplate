@@ -1,4 +1,5 @@
 import myconn.DatabaseAdapter;
+import myconn.DotaPickDBManager;
 
 public class Main {
 
@@ -12,17 +13,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        DatabaseAdapter myAdapater = new DatabaseAdapter(
-                "jdbc:postgresql://localhost:5432/DotaPickDB",
-                "Anthony",
-                ""
-        );
-        showConnState(myAdapater);
+        DotaPickDBManager myDb = new DotaPickDBManager();
+        showConnState(myDb);
 
-        myAdapater.connect();
-        showConnState(myAdapater);
+        myDb.connect();
+        showConnState(myDb);
 
-        myAdapater.disconnect();
-        showConnState(myAdapater);
+        myDb.disconnect();
+        showConnState(myDb);
     }
 }
