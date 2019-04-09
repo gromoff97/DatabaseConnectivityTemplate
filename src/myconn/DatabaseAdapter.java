@@ -4,8 +4,8 @@ import java.sql.*;
 
 public class DatabaseAdapter {
 
-    private Connection conn;
-    private Statement stmnt;
+    protected Connection conn;
+    protected Statement stmnt;
 
     private String jdbUrl;
     private String username;
